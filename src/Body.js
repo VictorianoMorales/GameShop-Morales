@@ -2,7 +2,7 @@ import NavBar from './NavBar';
 import Main from './Main';
 function Body() {
     return(
-        <div class="wrapper">
+        <div className="wrapper">
             <NavBar/>
             <Main/>
         </div>

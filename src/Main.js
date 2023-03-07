@@ -3,7 +3,7 @@ import ItemListContainer from './ItemListConteiner'
 
 function Main(){
     return(
-        <main class="main">
+        <main className="main">
             <ItemListContainer greeting="No hay stock."/>
         </main>
     )

@@ -1,6 +1,6 @@
 function ItemListContainer({greeting}){
     return(
-        <h1 class="titulo">
+        <h1 className="titulo">
             {greeting}
         </h1>
     )

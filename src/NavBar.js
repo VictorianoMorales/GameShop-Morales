@@ -2,15 +2,15 @@ import CartWidget from "./CartWidget";
 
 function NavBar(){
     return(        
-        <header class="header">
+        <header className="header">
             <h2>
                 GameShop
             </h2>
             <nav>
-                <ul class="menu">
-                    <li><button class="boton active">Todos</button></li>
-                    <li><button class="boton">Nuevos Lanzamientos</button></li>
-                    <li><button class="boton">Mas Populares</button></li>
+                <ul className="menu">
+                    <li><button className="boton active">Todos</button></li>
+                    <li><button className="boton">Nuevos Lanzamientos</button></li>
+                    <li><button className="boton">Mas Populares</button></li>
                     <CartWidget/>
                 </ul>
             </nav>
