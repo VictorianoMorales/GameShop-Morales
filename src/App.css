@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --clr-main: #1976D2;
+  --clr-main-light: #2196F3;
+  --clr-white: #ececec;
+  --clr-gray: #e2e2e2;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1, h2, h3, h4, h5, h6, p, a, input, textarea, ul {
+  margin: 0;
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-rows: 1fr 10fr;
+  background-color: var(--clr-main);
+  height: 100vh;
+}
+
+
+.header{
+  color: var(--clr-gray);
+  display:flex;  
+  justify-content:space-around;    
+  align-items:  center;
+}
+
+.menu{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;  
 }
 
-.App-link {
-  color: #61dafb;
+.boton{
+  color: var(--clr-gray);
+  text-transform: uppercase;  
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: 600;     
+  font-size: .85rem;
+  padding-inline: 1rem;
+  width: 100%;
+  border: 0;
+  border-radius: 5px;  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.active{
+  background-color: var(--clr-gray);
+  color: var(--clr-main-light);
+}
+
+.boton-carrito{
+  color: var(--clr-main-light);
+  background-color: var(--clr-white);
+  margin-left: 4rem;
+  padding: .25rem;
+  border-radius: .25rem;
+}
+
+.boton-carrito:hover{
+  color: var(--clr-main-light);
+  background-color: var(--clr-white);
+}
+
+.main{
+  background-color: var(--clr-white);
+  margin: .5rem;
+  border-radius: 1rem;
+}
+
+.titulo{
+  color: var(--clr-main);
+  height: 3rem;
+  margin: 2rem;
 }
